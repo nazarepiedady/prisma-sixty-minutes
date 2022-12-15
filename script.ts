@@ -8,9 +8,9 @@ async function main() {
       name: 'Kyle',
       email: 'kyle@test.com',
       age: 27,
-      UserPreference: {
+      userPreference: {
         create: {
-          emailUpdates: true
+          emailUpdates: true,
         },
       },
     },
