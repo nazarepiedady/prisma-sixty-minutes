@@ -31,7 +31,7 @@ model Post {
   id            String     @id @default(uuid())
   rating        Float
   createdAt     DateTime
-  updatedAt     DateTime
+  updatedAt     DateTime   @updatedAt
   author        User       @relation("WrittenPosts", fields: [authorId], references: [id])
   authorId      String
   favoritedBy   User?      @relation("FavoritePosts", fields: [favoritedById], references: [id])
