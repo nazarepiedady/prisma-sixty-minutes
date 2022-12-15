@@ -49,3 +49,8 @@ model Category {
   name  String @unique
   posts Post[]
 }
+
+enum Role {
+  BASIC
+  ADMIN
+}
