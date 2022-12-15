@@ -15,7 +15,7 @@ model User {
   age            Int
   name           String
   email          String          @unique
-  isAdmin        Boolean
+  role           Role            @default(BASIC)
   writtenPosts   Post[]          @relation("WrittenPosts")
   favoritePosts  Post[]          @relation("FavoritePosts")
   UserPreference UserPreference?
