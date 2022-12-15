@@ -10,12 +10,12 @@ async function main() {
       age: 27,
       UserPreference: {
         create: {
-          emailUpdate: true
+          emailUpdates: true
         },
       },
     },
     include: {
-      UserPreference: true,
+      userPreference: true,
     }
   })
 

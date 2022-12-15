@@ -26,9 +26,9 @@ model User {
 }
 
 model UserPreference {
-  id          String  @id @default(uuid())
-  emailUpdate Boolean
-  user        User?
+  id           String  @id @default(uuid())
+  emailUpdates Boolean
+  user         User?
 }
 
 model Post {
